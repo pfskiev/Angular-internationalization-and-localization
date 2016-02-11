@@ -1,0 +1,29 @@
+{
+  "name": "Angular-internationalization-and-localization",
+  "homepage": "https://github.com/pfskiev/",
+  "authors": [
+    "Constantine Podlesny"
+  ],
+  "description": "Create simple template Angular throw internationalization and localization requirements",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Angular",
+    "i18n"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-dynamic-locale": "^0.1.30",
+    "angular-i18n": "1.4.8",
+    "angular": "^1.5.0",
+    "bootstrap": "^4.0.0"
+  }
+}

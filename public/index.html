@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="App">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Angular Internationalization Localization">
+    <meta name="author" content="Constantine Podlesny">
+    <title>Angular-internationalization-and-localization</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <script src="assets/vendor/angular/angular.min.js"></script>
+    <script src="assets/vendor/angular-dynamic-locale/tmhDynamicLocale.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/controller.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+<fieldset class="form-group">
+    <label for="exampleSelect1">Example select</label>
+    <select class="form-control" id="exampleSelect1" ng-model="model.selectedLocale" ng-options="key as value for (key, value) in availableLocales" ng-change="changeLocale(model.selectedLocale)"></select>
+</fieldset>
+<p>Selected locale id: {{model.selectedLocale}}</p>
+<p>Current locale id: {{$locale.id}}</p>
+<p>A big number: {{1234567890 | number}}</p>
+<p>The Epoch was on: {{0 | date}}</p>
+<p>One million of the local currency: {{1000000 | currency}}</p>
+</div>
+</body>
+</html>
